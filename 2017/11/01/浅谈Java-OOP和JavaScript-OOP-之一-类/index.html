@@ -61,11 +61,17 @@
   
 
   
+    
+      
+    
+
+    
+  
 
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -102,7 +108,7 @@
 <meta property="og:site_name" content="jinghuilin">
 <meta property="og:description" content="转眼间已参加陪训有一个星期了，也把自己讨厌Java的心扭转到了热爱的路上，当然最让我着迷的还是JavaScript。慢慢的好像能写一些Java OOP的代码了，对这种纯面向对象语言的学习，一下子打通了我对JavaScript OOP的疑惑，因为互相对比学习，好像也明白了一些Java OOP的所以然。  Java就是朝着OOP去设计的 JavaScript可以有很多种编程方式 在我眼中，Java就是">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-20T09:35:19.468Z">
+<meta property="og:updated_time" content="2017-11-20T12:11:08.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈Java OOP和JavaScript OOP 之一--类">
 <meta name="twitter:description" content="转眼间已参加陪训有一个星期了，也把自己讨厌Java的心扭转到了热爱的路上，当然最让我着迷的还是JavaScript。慢慢的好像能写一些Java OOP的代码了，对这种纯面向对象语言的学习，一下子打通了我对JavaScript OOP的疑惑，因为互相对比学习，好像也明白了一些Java OOP的所以然。  Java就是朝着OOP去设计的 JavaScript可以有很多种编程方式 在我眼中，Java就是">
@@ -392,13 +398,13 @@
 </ul>
 <hr>
 <p>先来看两段代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//Java</div><div class="line">public class SuperType&#123;</div><div class="line">    String name;</div><div class="line">    int age;</div><div class="line">    public SuperType(String name, int age)&#123;</div><div class="line">        this.name = name;</div><div class="line">        this.age = age;</div><div class="line">    &#125;</div><div class="line">    public sayName()&#123;</div><div class="line">        System.out.println(&quot;Hello, &quot; + this.name);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//JavaScript（ES6）</div><div class="line">class SuperType&#123;</div><div class="line">    constructor(name, age)&#123;</div><div class="line">        this.name = name;</div><div class="line">        this.age = age;</div><div class="line">    &#125;</div><div class="line">    sayName()&#123;</div><div class="line">        console.log(&quot;Hello, &quot; + this.name);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//Java</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SuperType</span></span>&#123;</div><div class="line">    String name;</div><div class="line">    <span class="keyword">int</span> age;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SuperType</span><span class="params">(String name, <span class="keyword">int</span> age)</span></span>&#123;</div><div class="line">        <span class="keyword">this</span>.name = name;</div><div class="line">        <span class="keyword">this</span>.age = age;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">sayName</span><span class="params">()</span></span>&#123;</div><div class="line">        System.out.println(<span class="string">"Hello, "</span> + <span class="keyword">this</span>.name);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//JavaScript（ES6）</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SuperType</span></span>&#123;</div><div class="line">    <span class="keyword">constructor</span>(name, age)&#123;</div><div class="line">        <span class="keyword">this</span>.name = name;</div><div class="line">        <span class="keyword">this</span>.age = age;</div><div class="line">    &#125;</div><div class="line">    sayName()&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"Hello, "</span> + <span class="keyword">this</span>.name);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>分析一下，由于JavaScript的ES6内置了classes，所以写出来跟Java视觉上的差距就是只剩下几个关键字的不同了，Java要声明类型，JavaScript不需要，这几乎就是这两门语言的很关键的不同，也决定了Java是“强”，JavaScript是“弱”。<br>Java里有一个SuperType（）构造方法和sayName()普通方法，JavaScript里有构造函数和sayName（）方法，这里JavaScript里与Java不同的地方：</p>
 <ul>
 <li>JavaScript里方法也都是函数（Function）</li>
 <li>Java的方法定义在类里面</li>
-<li>JavaScript的方法看似是定义在“类”里面，实则还是<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SuperType.prototype.sayName = function()&#123;...&#125;</div></pre></td></tr></table></figure>
+<li>JavaScript的方法看似是定义在“类”里面，实则还是<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;...&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>所以JavaScript的类只是ES6的语法糖，内部实现还是基于原型的，这里的类也不是真的类，到底还是一个构造函数。</p>
