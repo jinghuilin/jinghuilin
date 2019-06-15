@@ -100,18 +100,18 @@
 
 
 
-<meta name="description" content="第一步github创建仓库第二步，本地初始化项目1git init 第三步，连接远程仓库，去掉中括号，填写项目http地址1git remote add origin [项目地址]">
+<meta name="description" content="作为程序员，在开发的过程中肯定天天与代码打交道，我们需要工具去管理我们的代码，这就需要git这个神器的帮助。接下来我们来看看怎么使用git命令和github建立连接，来上传代码。 第一步github创建仓库第二步，本地初始化项目1git init 第三步，连接远程仓库，去掉中括号，填写项目http地址1git remote add origin [项目地址]">
 <meta name="keywords" content="git,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用git连接github远程仓库上传项目">
 <meta property="og:url" content="http://yoursite.com/2019/06/13/使用git连接github远程仓库上传项目/index.html">
 <meta property="og:site_name" content="slash">
-<meta property="og:description" content="第一步github创建仓库第二步，本地初始化项目1git init 第三步，连接远程仓库，去掉中括号，填写项目http地址1git remote add origin [项目地址]">
+<meta property="og:description" content="作为程序员，在开发的过程中肯定天天与代码打交道，我们需要工具去管理我们的代码，这就需要git这个神器的帮助。接下来我们来看看怎么使用git命令和github建立连接，来上传代码。 第一步github创建仓库第二步，本地初始化项目1git init 第三步，连接远程仓库，去掉中括号，填写项目http地址1git remote add origin [项目地址]">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-15T02:31:30.238Z">
+<meta property="og:updated_time" content="2019-06-15T10:01:43.325Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用git连接github远程仓库上传项目">
-<meta name="twitter:description" content="第一步github创建仓库第二步，本地初始化项目1git init 第三步，连接远程仓库，去掉中括号，填写项目http地址1git remote add origin [项目地址]">
+<meta name="twitter:description" content="作为程序员，在开发的过程中肯定天天与代码打交道，我们需要工具去管理我们的代码，这就需要git这个神器的帮助。接下来我们来看看怎么使用git命令和github建立连接，来上传代码。 第一步github创建仓库第二步，本地初始化项目1git init 第三步，连接远程仓库，去掉中括号，填写项目http地址1git remote add origin [项目地址]">
 
 
 
@@ -356,17 +356,18 @@
       
 
       
-        <h3 id="第一步github创建仓库"><a href="#第一步github创建仓库" class="headerlink" title="第一步github创建仓库"></a>第一步github创建仓库</h3><h3 id="第二步，本地初始化项目"><a href="#第二步，本地初始化项目" class="headerlink" title="第二步，本地初始化项目"></a>第二步，本地初始化项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
+        <p>作为程序员，在开发的过程中肯定天天与代码打交道，我们需要工具去管理我们的代码，这就需要git这个神器的帮助。接下来我们来看看怎么使用git命令和github建立连接，来上传代码。</p>
+<h3 id="第一步github创建仓库"><a href="#第一步github创建仓库" class="headerlink" title="第一步github创建仓库"></a>第一步github创建仓库</h3><h3 id="第二步，本地初始化项目"><a href="#第二步，本地初始化项目" class="headerlink" title="第二步，本地初始化项目"></a>第二步，本地初始化项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
 <h3 id="第三步，连接远程仓库，去掉中括号，填写项目http地址"><a href="#第三步，连接远程仓库，去掉中括号，填写项目http地址" class="headerlink" title="第三步，连接远程仓库，去掉中括号，填写项目http地址"></a>第三步，连接远程仓库，去掉中括号，填写项目http地址</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin [项目地址]</div></pre></td></tr></table></figure>
 <a id="more"></a>
-<h3 id="第四步，拉取远程分支到本地"><a href="#第四步，拉取远程分支到本地" class="headerlink" title="第四步，拉取远程分支到本地"></a>第四步，拉取远程分支到本地</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin master : master</div></pre></td></tr></table></figure>
+<h3 id="第四步，拉取远程分支到本地-这里是指定master分支"><a href="#第四步，拉取远程分支到本地-这里是指定master分支" class="headerlink" title="第四步，拉取远程分支到本地,这里是指定master分支"></a>第四步，拉取远程分支到本地,这里是指定master分支</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</div><div class="line">//示例</div><div class="line">git pull origin master : master</div><div class="line">//如果远程仓库就一个master分支，直接用</div><div class="line">git pull</div></pre></td></tr></table></figure>
 <h3 id="第五步，把本地项目加到本地分支"><a href="#第五步，把本地项目加到本地分支" class="headerlink" title="第五步，把本地项目加到本地分支"></a>第五步，把本地项目加到本地分支</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//-A和.是一样的效果都是all，所以这两句是一样的</div><div class="line">git add -A</div><div class="line">git add .</div></pre></td></tr></table></figure>
 <h3 id="第六步，提交代码"><a href="#第六步，提交代码" class="headerlink" title="第六步，提交代码"></a>第六步，提交代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m &apos;提交内容名称&apos;</div></pre></td></tr></table></figure>
 <h3 id="第七步，推送代码到远程仓库"><a href="#第七步，推送代码到远程仓库" class="headerlink" title="第七步，推送代码到远程仓库"></a>第七步，推送代码到远程仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//这里--set-upstream也可以用-u来代替</div><div class="line">git push --set-upstream origin master</div></pre></td></tr></table></figure>
 <h3 id="第七步也可以是"><a href="#第七步也可以是" class="headerlink" title="第七步也可以是"></a>第七步也可以是</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
-<p>两者的区别就是前者多个<b>–set-upstream</b>，意思就是设定上流，这样以后不用每次都要指定分支，第一次用这条push以后可以直接用git push了。<b style="color:red">当然如果第一次直接用git push是肯定会报错的。</b>而后者每次都要git push origin master指定远程分支才可以。</p>
+<p>两者的区别就是前者多个<b>–set-upstream</b>，意思就是设定上游，这样以后不用每次都要指定分支，第一次用这条push以后可以直接用git push了。<b style="color:red">当然如果第一次直接用git push是肯定会报错的。</b>而后者每次都要git push origin master指定远程分支才可以。</p>
 <hr>
-<p>结语：当然这里面有些部分可以省略，但是这样写全不容易出现错误。尤其是第一次连接的时候，可能会出奇奇怪怪的错误。</p>
+<p>这些命令现在很多ide都已经集成了，都是可视化操作，但是还是需要去了解这些操作的本质。</p>
 
       
     </div>
@@ -541,7 +542,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步github创建仓库"><span class="nav-number">1.</span> <span class="nav-text">第一步github创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步，本地初始化项目"><span class="nav-number">2.</span> <span class="nav-text">第二步，本地初始化项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步，连接远程仓库，去掉中括号，填写项目http地址"><span class="nav-number">3.</span> <span class="nav-text">第三步，连接远程仓库，去掉中括号，填写项目http地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四步，拉取远程分支到本地"><span class="nav-number">4.</span> <span class="nav-text">第四步，拉取远程分支到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五步，把本地项目加到本地分支"><span class="nav-number">5.</span> <span class="nav-text">第五步，把本地项目加到本地分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第六步，提交代码"><span class="nav-number">6.</span> <span class="nav-text">第六步，提交代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七步，推送代码到远程仓库"><span class="nav-number">7.</span> <span class="nav-text">第七步，推送代码到远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七步也可以是"><span class="nav-number">8.</span> <span class="nav-text">第七步也可以是</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步github创建仓库"><span class="nav-number">1.</span> <span class="nav-text">第一步github创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步，本地初始化项目"><span class="nav-number">2.</span> <span class="nav-text">第二步，本地初始化项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步，连接远程仓库，去掉中括号，填写项目http地址"><span class="nav-number">3.</span> <span class="nav-text">第三步，连接远程仓库，去掉中括号，填写项目http地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四步，拉取远程分支到本地-这里是指定master分支"><span class="nav-number">4.</span> <span class="nav-text">第四步，拉取远程分支到本地,这里是指定master分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五步，把本地项目加到本地分支"><span class="nav-number">5.</span> <span class="nav-text">第五步，把本地项目加到本地分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第六步，提交代码"><span class="nav-number">6.</span> <span class="nav-text">第六步，提交代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七步，推送代码到远程仓库"><span class="nav-number">7.</span> <span class="nav-text">第七步，推送代码到远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七步也可以是"><span class="nav-number">8.</span> <span class="nav-text">第七步也可以是</span></a></li></ol></div>
             
 
           </div>
